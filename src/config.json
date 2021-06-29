@@ -1,0 +1,16 @@
+{
+  "selenium_drivers_paths":
+  {
+    "root_path": "C:\\selenium-drivers",
+    "opera": "operadriver.exe",
+    "chrome": "chromedriver.exe",
+    "edge": "msedgedriver.exe"
+  },
+  "data_pool": {
+    "dir_name": "DataPools"
+  },
+  "log_config": {
+    "format": "[{time:HH:mm:ss}] [{level}] [{name}:{function}:{line}: {exception}] | {message}",
+    "rotation": "1 month"
+  }
+}
