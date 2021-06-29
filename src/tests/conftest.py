@@ -15,7 +15,7 @@ def setUpLogger():
     format_file = config_file.get_array_value(ConfigEnum.LOG_CONFIG, ConfigEnum.FORMAT)
     rotation = config_file.get_array_value(ConfigEnum.LOG_CONFIG, ConfigEnum.ROTATION)
 
-    logs_file_dir = f"{get_project_root().parent}\\Logs\\logs.log"
+    logs_file_dir = f"{get_project_root().parent}\\logs\\logs.log"
     logger.add(logs_file_dir, format=format_file, rotation=rotation)
 
 
