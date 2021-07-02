@@ -5,9 +5,8 @@ import allure
 from src.pages.sauce_login_page import LoginSaucePage
 from src.utils.datapool_handler import DataPoolHandler
 
-@allure.feature("Shoping")
-class LoginTestCase(unittest.TestCase):
 
+class LoginTestCase(unittest.TestCase):
     __datapool = None
 
     def setUp(self):
@@ -22,4 +21,3 @@ class LoginTestCase(unittest.TestCase):
         self.sauce_login_po = LoginSaucePage()
         main_page = self.sauce_login_po.login(self.__datapool.user, self.__datapool.password)
         assert main_page is not None, "Login Test Failed"
-
