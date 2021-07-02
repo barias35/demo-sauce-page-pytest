@@ -21,10 +21,9 @@ class Config:
     __CONFIG_FILE_JSON = None
 
     def __init__(self):
-        __CONFIG_FILE = f"{get_project_root()}\\config.json"
+        __CONFIG_FILE = f"{get_project_root()}//config.json"
         with open(__CONFIG_FILE) as json_data_file:
             self.__CONFIG_FILE_JSON = json.load(json_data_file)
-
 
     def get_value(self, key_name: str):
         value = ""
@@ -37,5 +36,3 @@ class Config:
 
     def get_array_value(self, array_key_name: str, filter_value: str):
         return self.__CONFIG_FILE_JSON[array_key_name][filter_value]
-
-
