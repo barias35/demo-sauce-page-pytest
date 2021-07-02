@@ -21,7 +21,7 @@ class Config:
     __CONFIG_FILE_JSON = None
 
     def __init__(self):
-        __CONFIG_FILE = f"{get_project_root().parent}\\config.json"
+        __CONFIG_FILE = f"{get_project_root()}\\config.json"
         with open(__CONFIG_FILE) as json_data_file:
             self.__CONFIG_FILE_JSON = json.load(json_data_file)
 
